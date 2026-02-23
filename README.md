@@ -28,8 +28,9 @@ It is currently **highly specialized** for Meta platforms (Facebook, Instagram, 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/HasanHabeeb/HarQL.git
+   git clone https://github.com/HasanHabeeb/HarQL
    cd HarQL
+   gradle clean build
 
 Build the extension:Bashgradle clean build
 The compiled JAR will be available in build/libs/
