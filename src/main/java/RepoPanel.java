@@ -198,20 +198,45 @@ if (confirm == JOptionPane.OK_OPTION) {
     }
 
     private void exportRulesJson() {
-        JFileChooser chooser = new JFileChooser();
-        chooser.setDialogTitle("Export Injection Rules");
-        chooser.setSelectedFile(new File("injection_rules.json"));
-        if (chooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
-            File file = chooser.getSelectedFile();
-            if (!file.getName().endsWith(".json")) file = new File(file.getAbsolutePath() + ".json");
 
-            try (FileWriter writer = new FileWriter(file)) {
-                writer.write(engine.exportRulesAsJson());
-            } catch (IOException ex) {
-                JOptionPane.showMessageDialog(this, "Export failed: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-            }
-        }
+    JFileChooser chooser = new JFileChooser();
+    chooser.setDialogTitle("Export Injection Rules");
+    chooser.setSelectedFile(new File("injection_rules.json"));
+
+    if (chooser.showSaveDialog(this) != JFileChooser.APPROVE_OPTION) {
+        return;
     }
+
+    File file = chooser.getSelectedFile();
+    if (!file.getName().endsWith(".json")) {
+        file = new File(file.getAbsolutePath() + ".json");
+    }
+
+    try (FileWriter writer = new FileWriter(file)) {
+
+        String bulk = rulesBulkArea.getText();
+        if (bulk != null && !bulk.trim().isEmpty()) {
+            engine.loadRules(bulk);
+        }
+
+        writer.write(engine.exportRulesAsJson());
+
+        JOptionPane.showMessageDialog(
+                this,
+                "Export successful.",
+                "Export",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+
+    } catch (IOException ex) {
+        JOptionPane.showMessageDialog(
+                this,
+                "Export failed: " + ex.getMessage(),
+                "Error",
+                JOptionPane.ERROR_MESSAGE
+        );
+    }
+}
 
     private void importRulesJson() {
         JFileChooser chooser = new JFileChooser();
@@ -673,4 +698,5 @@ if (confirm == JOptionPane.OK_OPTION) {
             JOptionPane.showMessageDialog(parentDialog, "Failed to send to Repeater: " + ex.getMessage(), "Send Error", JOptionPane.ERROR_MESSAGE);
         }
     }
+
 }
