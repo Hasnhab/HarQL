@@ -25,22 +25,22 @@ It is currently **highly specialized** for Meta platforms (Facebook, Instagram, 
 ## Demo & Screenshots
 
 ### 1. Variable Insights – Repeated Variables Ranking
-<image-card alt="HarQL Observed Params" src="images/observed-params.png" ></image-card>
+![HarQL Observed Params](images/observed-params.png)
 
 ### 2. Command Center + Bulk Injection Rules + Export Menu
-<image-card alt="HarQL Command Center & Export" src="images/command-center-export.png" ></image-card>
+![HarQL Command Center & Export](images/command-center-export.png)
 
 ### 3. Operation Details + One-Click Send to Repeater
-<image-card alt="HarQL Operation Details" src="images/operation-details-repeater.png" ></image-card>
+![HarQL Operation Details](images/operation-details-repeater.png)
 
 ### 4. Inferred Schema + Interactive Graph
-<image-card alt="HarQL Inferred Schema" src="images/inferred-schema.png" ></image-card>
+![HarQL Inferred Schema](images/inferred-schema.png)
 
 ### 5. Export Options – Raw Repo
-<image-card alt="Export Repo - Raw" src="images/export-repo-raw.png" ></image-card>
+![Export Repo - Raw](images/export-repo-raw.png)
 
 ### 6. Pitchfork Export Success
-<image-card alt="HarQL Pitchfork Export" src="images/pitchfork-success.png" ></image-card>
+![HarQL Pitchfork Export](images/pitchfork-success.png)
 
 ---
 
