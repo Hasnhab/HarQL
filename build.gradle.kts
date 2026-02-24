@@ -20,10 +20,13 @@ tasks.withType<JavaCompile>().configureEach {
 
 tasks.named<Jar>("jar") {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    
     from(configurations.runtimeClasspath.get().filter { it.isDirectory })
     from(configurations.runtimeClasspath.get().filterNot { it.isDirectory }.map { zipTree(it) })
-
+    
     manifest {
         attributes["Burp-Version"] = "2025+"
     }
+    
+    archiveFileName.set("HarQL-1.0.jar")
 }
