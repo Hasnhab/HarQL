@@ -83,7 +83,7 @@ Active Meta Bug Bounty Researcher since 2021
 
 Email: [Xvisor03@gmail.com](mailto:Xvisor03@gmail.com)  
 LinkedIn: [linkedin.com/in/hasanhabeeb](https://linkedin.com/in/hasanhabeeb)  
-GitHub: [github.com/HasanHabeeb](https://github.com/HasanHabeeb)
+GitHub: [github.com/Hasnhab](https://github.com/Hasnhab)
 
 
 Made with passion for the bug bounty and offensive security community.
