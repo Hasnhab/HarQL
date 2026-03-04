@@ -157,7 +157,7 @@ Hasan Habeeb
 
 Offensive Security Researcher
 
-Email: Xvisor03@gmail.com
+Email: hasnhab.sec@gmail.com
 
 LinkedIn: https://linkedin.com/in/hasanhabeeb
 
