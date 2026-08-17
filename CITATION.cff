@@ -1,0 +1,72 @@
+cff-version: 1.2.0
+
+message: "If you use HarQL in your research, security testing, analysis, or other work, please cite this software."
+
+title: "HarQL: GraphQL Operation Harvester for Burp Suite"
+
+abstract: >
+  HarQL is a Burp Suite extension designed to extract GraphQL operations,
+  doc_ids, and associated variables from JavaScript bundles and observed
+  HTTP traffic without relying on GraphQL introspection. The first public
+  release combines static analysis of JavaScript modules with dynamic
+  inspection of live GraphQL traffic and is designed for large-scale and
+  obfuscated client-side GraphQL applications.
+
+  HarQL v1.0 provides introspection-independent GraphQL operation
+  extraction, advanced JavaScript bundle parsing, real-time traffic
+  harvesting, variable insights and ranking, bulk injection rules,
+  inferred GraphQL schema generation with interactive visualization,
+  reconstruction and sending of GraphQL requests to Burp Repeater,
+  multiple export formats, and session/repository management.
+
+  The release is currently focused on Meta platforms, including Facebook
+  and Instagram. All processing is performed locally within Burp Suite.
+  The software is intended for authorized security testing and research.
+
+authors:
+  - family-names: "Habeeb"
+    given-names: "Hasan"
+    email: "hasnhab.sec@gmail.com"
+
+type: software
+
+version: "1.0"
+
+date-released: "2026-02-24"
+
+doi: "10.5281/zenodo.21974846"
+
+repository-code: "https://github.com/Hasnhab/HarQL"
+
+url: "https://doi.org/10.5281/zenodo.21974846"
+
+commit: "e3b5c6c"
+
+license: "MIT"
+
+keywords:
+  - GraphQL
+  - GraphQL Security
+  - GraphQL Operation Harvesting
+  - GraphQL Introspection
+  - GraphQL Schema Inference
+  - Burp Suite
+  - Burp Suite Extension
+  - Application Security
+  - API Security
+  - Security Research
+  - JavaScript Analysis
+  - Static Analysis
+  - Dynamic Analysis
+  - Reverse Engineering
+  - Obfuscated JavaScript
+  - Web Security
+
+references:
+  - type: web
+    name: "HarQL GitHub Repository"
+    url: "https://github.com/Hasnhab/HarQL"
+
+  - type: web
+    name: "HarQL v1.0 Release"
+    url: "https://github.com/Hasnhab/HarQL/releases/tag/HarQL_v1.0"
